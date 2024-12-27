@@ -146,7 +146,7 @@ body {
     border-bottom: 2px solid var(--color-border);
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .search-area {
@@ -159,9 +159,34 @@ body {
     grid-column: 2 / 3;
 }
 
-.greeting {
+.greeting-area {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    display: grid;
+    grid-template: 1fr 1fr / 50px auto;
+}
+
+.greeting-area > img {
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-highlight);
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    margin-left: 5px;
+}
+
+.greeting {
+    font-size: small;
+    align-self:self-end;
+    padding-left: 8px;
+}
+
+.username {
+    font-size: large;
+    align-self: self-start;
+    padding-left: 8px;
 }
 
 .button-area {
@@ -171,6 +196,7 @@ body {
     grid-template: 1fr / 1fr 1fr 1fr;
     gap: 2px;
     justify-items: center;
+    align-items: center;
     padding: 2px;
 }
 
