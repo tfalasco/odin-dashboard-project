@@ -20,3 +20,20 @@ body {
         "sidebar header"
         "sidebar main-content";
 }
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--color-sidebar);
+    color: var(--color-white);
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: var(--color-main-content);
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-border);
+}
