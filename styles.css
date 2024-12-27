@@ -25,6 +25,114 @@ body {
     grid-area: sidebar;
     background-color: var(--color-sidebar);
     color: var(--color-white);
+    display: grid;
+    /* grid-template-columns: 4rem auto;
+    grid-template-rows: 75px 25px repeat(6 50px) 25px repeat(3 50px); */
+    grid-template: 
+        "dashboard-icon   dashboard-text"   75px
+        ".                ."                25px
+        "home-icon        home-text"        50px
+        "profile-icon     profile-text"     50px
+        "messages-icon    messages-text"    50px
+        "history-icon     history-text"     50px
+        "tasks-icon       tasks-text"       50px
+        "communities-icon communities-text" 50px
+        ".                ."                25px
+        "settings-icon    settings-text"    50px
+        "support-icon     support-text"     50px
+        "privacy-icon     privacy-text"     minmax(50px, 1fr)
+        / 4rem            auto;
+    align-items: center;
+}
+
+.svg-cell {
+    padding: 1.25rem;
+}
+
+.dashboard-svg {
+    grid-area: dashboard-icon;
+    padding: 0.5rem;
+}
+
+.dashboard-link {
+    grid-area: dashboard-text;
+    font-size: 1.5rem;
+}
+
+.home-svg {
+    grid-area: home-icon;
+}
+
+.home-link {
+    grid-area: home-text;
+}
+
+.profile-svg {
+    grid-area: profile-icon;
+}
+
+.profile-link {
+    grid-area: profile-text;
+}
+
+.messages-svg {
+    grid-area: messages-icon;
+}
+
+.messages-link {
+    grid-area: messages-text;
+}
+
+.history-svg {
+    grid-area: history-icon;
+}
+
+.history-link {
+    grid-area: history-text;
+}
+
+.tasks-svg {
+    grid-area: tasks-icon;
+}
+
+.tasks-link {
+    grid-area: tasks-text;
+}
+
+.communities-svg {
+    grid-area: communities-icon;
+}
+
+.communities-link {
+    grid-area: communities-text;
+}
+
+.settings-svg {
+    grid-area: settings-icon;
+}
+
+.settings-link {
+    grid-area: settings-text;
+}
+
+.support-svg {
+    grid-area: support-icon;
+}
+
+.support-link {
+    grid-area: support-text;
+}
+
+.privacy-svg {
+    grid-area: privacy-icon;
+}
+
+.privacy-link {
+    grid-area: privacy-text;
+}
+
+.title {
+    font-size: x-large;
 }
 
 .main-content {
