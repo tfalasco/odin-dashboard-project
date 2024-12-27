@@ -144,4 +144,43 @@ body {
     grid-area: header;
     background-color: var(--color-white);
     border-bottom: 2px solid var(--color-border);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.search-area {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.account-info {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.greeting {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.button-area {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 2px;
+    justify-items: center;
+    padding: 2px;
+}
+
+.button {
+    color: var(--color-white);
+    background-color: var(--color-sidebar);
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
