@@ -40,7 +40,7 @@ body {
         ".                ."                25px
         "settings-icon    settings-text"    50px
         "support-icon     support-text"     50px
-        "privacy-icon     privacy-text"     minmax(50px, 1fr)
+        "privacy-icon     privacy-text"     50px
         / 4rem            auto;
     align-items: center;
 }
