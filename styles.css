@@ -315,3 +315,7 @@ body {
     justify-self:flex-start;
     padding: 10px 0px;
 }
+
+.sub-sidebar hr {
+    margin: 15px 0px;
+}
