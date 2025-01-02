@@ -266,7 +266,7 @@ body {
     padding: 10px 10px 0px;
 }
 
-.cards {
+.projects .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -276,11 +276,8 @@ body {
 .card {
     border: none;
     border-radius: 8px;
-    border-left: 8px solid var(--color-highlight);
     background-color: var(--color-white);
     padding: 15px 10px;
-    display: grid;
-    grid-template-rows: 20px 100px 25px;
 }
 
 .card-title {
@@ -300,4 +297,10 @@ body {
     height: 20px;
     width: 20px;
     padding: 0px 5px;
+}
+
+.projects .card {
+    border-left: 8px solid var(--color-highlight);
+    display: grid;
+    grid-template-rows: 20px 100px 25px;
 }
