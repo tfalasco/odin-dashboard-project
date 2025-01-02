@@ -304,3 +304,14 @@ body {
     display: grid;
     grid-template-rows: 20px 100px 25px;
 }
+
+.sub-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 0px;
+}
+
+.sub-sidebar .main-content-title {
+    justify-self:flex-start;
+    padding: 10px 0px;
+}
